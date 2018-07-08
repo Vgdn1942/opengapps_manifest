@@ -4,6 +4,10 @@
     <remote name="opengapps"
         fetch="https://github.com/opengapps/"  />
 
+    <remote  name="omnirom"
+        fetch="https://github.com/omnirom"
+        review="gerrit.omnirom.org" />
+
     <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
     <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
 
@@ -15,5 +19,9 @@
     <project path="vendor/opengapps/sources/x86" name="x86" clone-depth="1" revision="master" remote="opengapps" />
     <project path="vendor/opengapps/sources/x86_64" name="x86_64" clone-depth="1" revision="master" remote="opengapps" />
 -->
+
+    <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-8.1" />
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-8.1" />
+
 
 </manifest>
